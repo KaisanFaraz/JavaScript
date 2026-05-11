@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bag Count</title>
+    <link rel="stylesheet" href="bag.css">
+    <link rel="stylesheet" href="bag.js">
+</head>
+<body>
+    <button class="bag-button" onclick="cartquan+=1;
+    document.querySelector('#cart-sum').innerText=`Your Bag has ${cartquan} Items`;">Add to bag</button>
+    <button class="wish-button" onclick="cartquan-=1;
+    document.querySelector('#cart-sum').innerText = `Your Bag has ${cartquan} items`">❤️ Wishlist</button>
+    <button class="add" onclick="cartquan+=2;
+    document.querySelector('#cart-sum').innerText = `Your Bag has ${cartquan} items`">Add 1+1 Sale Item</button>
+
+    <h1 id="cart-sum"></h1>
+
+    <script>
+        let cartquan =0;
+        document.querySelector('#cart-sum').innerText = `Your Bag has ${cartquan} items`;
+    </script>
+
+    
+</body>
+</html>
